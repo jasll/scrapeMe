@@ -3,17 +3,17 @@
 An interactive image scraper with a browser-based interface built using Express, Puppeteer, and TypeScript. 
 Crawl a website, grab image metadata (URL, dimensions, estimated file size), and download results as a CSV.
 
-## Features
+# Features
 
-- Crawl up to 10 web pages on a site URL
+- Crawl up to 10 web pages
 - Extract image URLs, resolutions, and approximate file sizes
 - Save data locally in CSV format
 - View results in-browser with a friendly GUI
 - CLI tool also available for power users
 
-## Getting Started
+# Getting Started
 
-### 1. Clone the repo
+# 1. Clone the repo
 
 ```bash
 git clone https://github.com/jasll/scrapeMe.git
@@ -28,11 +28,11 @@ npx ts-node scrapeImageDetailsCrawler.ts
 
 ### Tech Stack
 
-Tool	      Purpose
-Express	    Web server & GUI
-Puppeteer	  Headless browser crawling
-TypeScript	Type safety & structure
-ts-node	    Run TS without manual build
+Tool        Purpose
+Express     Web server & GUI
+Puppeteer   Headless browser crawling
+TypeScript  Type safety & structure
+ts-node     Run TS without manual build
 
 ### Output Format
 
@@ -46,3 +46,4 @@ After scraping, a CSV file named image-details.csv is saved to your desktop. Eac
 ### License
 
 MIT
+
