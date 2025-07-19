@@ -5,7 +5,7 @@ Crawl a website, grab image metadata (URL, dimensions, estimated file size), and
 
 ## Features
 
-- Crawl up to 10 web pages
+- Crawl up to 10 web pages on a site URL
 - Extract image URLs, resolutions, and approximate file sizes
 - Save data locally in CSV format
 - View results in-browser with a friendly GUI
