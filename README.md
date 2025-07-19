@@ -28,9 +28,9 @@ npx ts-node scrapeImageDetailsCrawler.ts
 
 ### Tech Stack
 
-Tool	    Purpose
+Tool	      Purpose
 Express	    Web server & GUI
-Puppeteer	Headless browser crawling
+Puppeteer	  Headless browser crawling
 TypeScript	Type safety & structure
 ts-node	    Run TS without manual build
 
