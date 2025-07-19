@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Scraper GUI</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('scrapeMe.png') center center / cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9); /* semi-transparent white overlay */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      width: 400px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #3366cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #254e9b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enter a URL to scrape images from:</h2>
+    <form method="POST" action="/scrape">
+      <input type="text" name="url" placeholder="https://example.com" required />
+      <br />
+      <button type="submit">Scrape Images</button>
+    </form>
+  </div>
+</body>
+</html>
