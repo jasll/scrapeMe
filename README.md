@@ -17,30 +17,35 @@ An interactive image scraper with a browser-based interface built using Express,
 ## Getting Started
 
 ### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/jasll/scrapeMe.git
 cd scrapeMe
 npm install
+```
 
-2. Run GUI Version
+**2. Run GUI Version**
 ```bash
 npx ts-node guiServer.ts
+```
 
 Visit http://localhost:3000 to launch the GUI.
 
-3. Run CLI Version (Optional)
+**3. Run CLI Version** (Optional)
 ```bash
 npx ts-node scrapeImageDetailsCrawler.ts
+```
+<br></br>
+**Tech Stack**
 
-Tech Stack
-Tool	        Role
-Express	      Web server and GUI frontend
-Puppeteer	    Headless browser scraping
-TypeScript	  Type-safe architecture
-ts-node	Run   TypeScript directly
+| Tool       | Role                         |
+|------------|------------------------------|
+| Express    | Web server and GUI frontend  |
+| Puppeteer  | Headless browser scraping    |
+| TypeScript | Type-safe architecture       |
+| ts-node    | Run TypeScript directly      |
 
-Output Format
+
+**Output Format**
 
 The scraper saves results to image-details.csv on your desktop. Each row contains:
 Image URL
@@ -48,15 +53,15 @@ Resolution (Width × Height)
 Estimated File Size
 Source Page URL
 
-Setup Notes
+**Setup Notes**
 
 If you see TypeScript errors like missing type declarations for Express, run:
 ```bash
 npm install --save-dev @types/express
-
+```
 This installs required types for successful compilation.
 
-License
+**License**
 
 MIT
 
