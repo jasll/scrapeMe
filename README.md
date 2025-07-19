@@ -1,49 +1,62 @@
 # scrapeMe
 
-An interactive image scraper with a browser-based interface built using Express, Puppeteer, and TypeScript. 
-Crawl a website, grab image metadata (URL, dimensions, estimated file size), and download results as a CSV.
+An interactive image scraper with a browser-based interface built using Express, Puppeteer, and TypeScript. Crawl any website, grab image metadata (URL, dimensions, estimated file size), and export results to CSV.
 
-# Features
+---
 
-- Crawl up to 10 web pages
-- Extract image URLs, resolutions, and approximate file sizes
-- Save data locally in CSV format
-- View results in-browser with a friendly GUI
-- CLI tool also available for power users
+## Features
 
-# Getting Started
+- Crawl up to 10 web pages from a given site
+- Extract image URLs, dimensions, and file sizes
+- Save metadata locally as CSV
+- Preview results via a clean GUI
+- Optional CLI for advanced scraping
 
-# 1. Clone the repo
+---
+
+## Getting Started
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/jasll/scrapeMe.git
 cd scrapeMe
 npm install
 
-### 2. Run the GUI scraper
+2. Run GUI Version
+```bash
 npx ts-node guiServer.ts
 
-### 3. Run CLI Scraper (Optional)
+Visit http://localhost:3000 to launch the GUI.
+
+3. Run CLI Version (Optional)
+```bash
 npx ts-node scrapeImageDetailsCrawler.ts
 
-### Tech Stack
+Tech Stack
+Tool	        Role
+Express	      Web server and GUI frontend
+Puppeteer	    Headless browser scraping
+TypeScript	  Type-safe architecture
+ts-node	Run   TypeScript directly
 
-Tool        Purpose
-Express     Web server & GUI
-Puppeteer   Headless browser crawling
-TypeScript  Type safety & structure
-ts-node     Run TS without manual build
+Output Format
 
-### Output Format
+The scraper saves results to image-details.csv on your desktop. Each row contains:
+Image URL
+Resolution (Width × Height)
+Estimated File Size
+Source Page URL
 
-After scraping, a CSV file named image-details.csv is saved to your desktop. Each row contains:
+Setup Notes
 
-- Image URL
-- Width × Height
-- File size (KB)
-- Source page
+If you see TypeScript errors like missing type declarations for Express, run:
+```bash
+npm install --save-dev @types/express
 
-### License
+This installs required types for successful compilation.
+
+License
 
 MIT
 
